@@ -13,6 +13,7 @@ const Plant = new mongoose.Schema({
     scale_factor:{type:Number, default: 1},
     moisture_history: Array,
     moisture_history_time: [Date],
+    test: String,
 });
 
 module.exports = mongoose.model("Plant-Registry",Plant,"Plant-Registry");
